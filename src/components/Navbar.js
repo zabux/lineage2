@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useTranslation } from "react-i18next";
 import { MouseContext } from "../context/mouse-context";
 import Scroll from 'react-scroll';
+import { Link } from "react-router-dom";
 import '../css/Header.scss';
 import { lineage2Black } from '../utils/Images';
 import '../css/Navbar.scss';
