@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react';
 import Swal from 'sweetalert2';
 
 import { MouseContext } from './context/mouse-context';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Aos from 'aos';
 import Header from './components/Header';
 import About from './components/About';
@@ -45,8 +45,10 @@ function App() {
             ata-aos="fade-left"
             data-aos-anchor="#trigger-right"/>
           <About data-aos="fade-right"/>
+          <Switch>
           <Route path="/news">
-          <News/> 
+          <News/>
+          </Switch>
           </Route>
           <Features/>
           <Requirement/>
