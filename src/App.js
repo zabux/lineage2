@@ -48,8 +48,8 @@ function App() {
           <Switch>
           <Route path="/news">
           <News/>
-          </Switch>
           </Route>
+          </Switch>
           <Features/>
           <Requirement/>
           <Footer/>
